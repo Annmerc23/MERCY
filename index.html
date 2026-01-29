@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Resort</title>
+
+    <style>
+        @media(min-width: 600PX) {
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto 1fr auto;
+                min-height: 100vh;
+                background-color: rgba(135, 206, 235, 0.9);
+                padding: 10px;
+            }
+
+            .header {
+                grid-column: 1 / 5;
+                text-align: center;
+                background-color: aquamarine;
+                padding: 15px;
+            }
+
+            .content {
+                grid-column: 1 / 5;
+                background-color: aquamarine;
+                padding: 20px;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .content img {
+                width: 200px;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .footer {
+                grid-column: 1 / 5;
+                text-align: center;
+                background-color: aquamarine;
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>WELCOME TO BEACH RESORT</h1>
+        </div>
+
+        <div class="content">
+            <p>
+                Beach Resort is a beautiful and relaxing place known for its clean white sand,
+                clear blue water, and calm environment.
+                The gentle waves and cool sea breeze make it a perfect spot for swimming and resting.
+                Its peaceful surroundings and stunning sunsets create a soothing atmosphere
+                for family and friends.
+            </p>
+
+            <img src="beaches3.jpg" alt="Beach 1">
+            <img src="beach2.jpg" alt="Beach 2">
+            <img src="beach1.jpg" alt="Beach 3">
+        </div>
+
+        <div class="footer">
+            VISIT MERCY BEACH RESORT
+        </div>
+
+    </div>
+
+</body>
+
+</html>
